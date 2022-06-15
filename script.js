@@ -171,31 +171,31 @@ function carregaImagemForca() {
   switch (tentativas) {
     case 5:
       document.getElementById('imagem').style.background =
-        "url('./assets/forca01.png')"
+        "url('/assets/forca01.png')"
       break
     case 4:
       document.getElementById('imagem').style.background =
-        "url('./assets/forca02.png')"
+        "url('/assets/forca02.png')"
       break
     case 3:
       document.getElementById('imagem').style.background =
-        "url('./assets/forca03.png')"
+        "url('/assets/forca03.png')"
       break
     case 2:
       document.getElementById('imagem').style.background =
-        "url('./assets/forca04.png')"
+        "url('/assets/forca04.png')"
       break
     case 1:
       document.getElementById('imagem').style.background =
-        "url('./assets/forca05.png')"
+        "url('/assets/forca05.png')"
       break
     case 0:
       document.getElementById('imagem').style.background =
-        "url('./assets/forca06.png')"
+        "url('/assets/forca06.png')"
       break
     default:
       document.getElementById('imagem').style.background =
-        "url('./assets/forca.png')"
+        "url('/assets/forca.png')"
       break
   }
 }
