@@ -1,0 +1,147 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 90vh;
+  margin-top: 10px;
+  background-color: #e5e5e5;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+#imagem {
+  background-image: url('/assets/forca.png');
+  width: 234px;
+  height: 272px;
+  background-repeat: no-repeat;
+}
+
+#palavra-secreta {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 1em;
+  margin-top: 30px;
+}
+
+.letras {
+  width: 16px;
+  text-align: center;
+  border-bottom: 2px solid #0a3871;
+  color: #072b61;
+  padding: 2px;
+  margin-left: 2px;
+  margin-right: 2px;
+}
+
+#teclado {
+  margin-top: 30px;
+}
+
+.teclas button {
+  width: 24px;
+  height: 24px;
+  margin: 2px;
+  margin-bottom: 5px;
+  cursor: pointer;
+  box-shadow: 0px 2px 5px dimgray;
+  border-radius: 5px;
+  border: 1px solid dimgray;
+  color: #0a3871;
+  font-weight: 900;
+  font-family: 'Ubuntu', sans-serif;
+}
+.teclas button:disabled {
+  cursor: not-allowed;
+}
+
+.teclas button:hover {
+  transform: scale(1.2);
+  background-color: #0a3871;
+  color: white;
+  transition: 100ms;
+}
+
+#categoria {
+  margin-top: 30px;
+  color: #0a3871;
+  font-size: 1.2em;
+}
+
+@media (min-width: 321px) {
+  .teclas button {
+    width: 25px;
+    height: 25px;
+  }
+
+  #categoria {
+    font-size: 1.3em;
+  }
+}
+@media (min-width: 376px) {
+  .teclas button {
+    width: 30px;
+    height: 30px;
+  }
+
+  #palavra-secreta {
+    font-size: 1.3em;
+  }
+
+  .letras {
+    width: 18px;
+  }
+
+  #categoria {
+    font-size: 1.5em;
+  }
+}
+
+@media (min-width: 426px) {
+  .teclas button {
+    width: 36px;
+    height: 36px;
+  }
+
+  #palavra-secreta {
+    font-size: 1.5em;
+  }
+
+  .letras {
+    width: 20px;
+  }
+
+  #categoria {
+    font-size: 1.6em;
+  }
+}
+
+@media (min-width: 769px) {
+  .teclas button {
+    width: 45px;
+    height: 45px;
+    font-size: 1.44em;
+  }
+  #palavra-secreta {
+    font-size: 2.5em;
+  }
+  .letras {
+    width: 30px;
+  }
+
+  #categoria {
+    font-size: 1.5em;
+  }
+}
